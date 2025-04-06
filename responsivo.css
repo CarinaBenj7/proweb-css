@@ -1,0 +1,9 @@
+@media screen and(min-width: 816px){
+    .principal{
+        height: 250px;
+        display: none;
+    }
+    .caixa{
+        display: none;
+    }
+}

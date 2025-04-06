@@ -1,0 +1,91 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding:0 ;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #eee0ae;
+}
+.menu{
+    flex: 60%;
+    margin-right: 5%;
+    text-align: right;
+    align-items: center;
+    gap: 50px;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(6, 1, 35);
+}
+.menu a:hover{
+    border-bottom: 3px solid rgb(222, 37, 99);
+    font-weight: 700;
+    color: rgb(222, 37, 99);
+}
+.logo{
+    flex: 20%;
+    margin-left: 5%;
+    align-items: center;
+    color:rgb(6, 1, 35) ;
+}
+header{
+    background:white ;
+    width: 100%;
+    color: rgb(6, 1, 35);
+    height: auto;
+    font-size: 28px;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+}
+h2{
+    font-weight: 900;
+}
+.principal{
+    margin-top: 10px;
+    display: flex;
+    text-align:center ;
+    align-items:center ;
+    width: 100%;
+    height: 220px;
+}
+.caixa{
+    width: 30%;
+    border: 2px solid #eee0ae;
+    color: rgb(5, 5, 71);
+    background-color: #eee0ae;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+
+}
+.caixa:hover{
+   background: rgb(222, 37, 99) ;
+   color: rgb(1, 4, 48);
+}
+hr{
+    border: 3px solid rgb(222, 37, 99);
+    
+}
+.rodape{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    background: rgb(1, 4, 48);
+    height: 300px;
+    align-items:center;
+    color: #eee0ae;
+}
+.rodape h1{
+    font-weight: bold;
+}
