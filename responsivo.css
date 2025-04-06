@@ -1,9 +1,167 @@
-@media screen and(min-width: 816px){
-    .principal{
-        height: 250px;
-        display: none;
+@media screen and (max-width: 1024px){
+
+    .animar{
+        font-size: 1.8rem;
+    }
+
+    .caixa p{
+        font-size: 1rem;
+    }
+
+    .caixa{
+        height: 350px;
+    }
+
+    .rodape h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+    .animar{
+        font-size: 1.65rem;
+    }
+
+    .caixa p{
+        font-size: .9rem;
+    }
+
+    .caixa{
+        height: 300px;
+    }
+
+    .rodape h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    .animar{
+        font-size: 1.4rem;
+    }
+
+    .caixa h3{
+        font-size: 1.2rem;
+    }
+
+    .rodape h1{
+        font-size: 1.2rem;
+    }
+
+    .logo h1{
+        font-size: 1.4rem;
+    }
+
+    .menu{
+        gap: 0px;
+    }
+
+    .menu a{
+        font-size: .92rem;
+    }
+}
+
+@media screen and (max-width: 585px){
+
+    .animar{
+        font-size: 1.4rem;
     }
     .caixa{
-        display: none;
+        width: 80%;
+    }
+
+    .caixa h3{
+        font-size: 1.6rem;
+    }
+
+    .caixa p{
+        font-size: .98rem;
+    }
+
+
+    .rodape h1{
+        font-size: 1.2rem;
+    }
+
+    .logo h1{
+        font-size: 1.4rem;
+    }
+
+    .menu{
+        gap: 0px;
+    }
+
+    .menu a{
+        font-size: .92rem;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu{
+
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 530px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    .menu{
+
+        height: 50px;
+        margin: 0;
+    }
+
+    .menu a{
+        font-size: 1rem;
+    }
+
+    .logo{
+        padding-top: 20px;
+    }
+
+    .animar{
+        text-wrap: wrap;
+        width: 75%;
+        animation: unset;
+        padding-top: 10px;
+    }
+
+    .logo h1{
+        width: 0%;
+        text-wrap: nowrap;
+        overflow: hidden;
+        animation: escreve 2s steps(70) .5s both;;
+    }
+
+    @keyframes escreve{
+    
+        from{width: 0%;}
+        to{width: 100%}
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .caixa{
+        width: 90%;
+    }
+
+    .animar{
+        width: 90%;
+    }
+
+    .caixa{
+        height: 280px;
     }
 }

@@ -1,8 +1,17 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Century Gothic';
     margin: 0%;
     padding:0 ;
 }
+
+.background{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 nav{
     display: flex;
     width: 100%;
@@ -12,22 +21,29 @@ nav{
     background-color: #eee0ae;
 }
 .menu{
-    flex: 60%;
+    display: flex;
     margin-right: 5%;
     text-align: right;
     align-items: center;
-    gap: 50px;
+    gap: 15px;
 }
 .menu a{
     text-decoration: none;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.01rem;
     color: rgb(6, 1, 35);
-}
-.menu a:hover{
-    border-bottom: 3px solid rgb(222, 37, 99);
+    transition: .4s;
     font-weight: 700;
-    color: rgb(222, 37, 99);
+    position: relative;
+}
+
+.menu a:hover{
+   
+    background-color: rgb(222, 37, 99);;
+    font-weight: 700;
+    color: #fff;
+   transition: .3s;
+
 }
 .logo{
     flex: 20%;
@@ -47,45 +63,119 @@ header{
 }
 h2{
     font-weight: 900;
+    font-size: 2.5rem;
+    margin: auto;
+    color: #010430;
 }
 .principal{
     margin-top: 10px;
     display: flex;
+    flex-direction: column;
     text-align:center ;
     align-items:center ;
-    width: 100%;
-    height: 220px;
+    width: 95%;
+    margin: auto;
+    /* height: 220px; */
+    gap: 20px;
 }
+
+.cards{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
 .caixa{
-    width: 30%;
-    border: 2px solid #eee0ae;
+    width: 100%;
     color: rgb(5, 5, 71);
     background-color: #eee0ae;
     justify-content: center;
-    margin-left: 3%;
-    margin-right: 3%;
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    border: 1px solid #dbc576bd;
+    /* padding: 10px; */
+    box-shadow: 5px 11px 30px rgba(0,0,0, .2);
+    transition: .3s;
+    height: 400px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caixa::before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: -100%;
+   transition: .4s;
 
 }
-.caixa:hover{
-   background: rgb(222, 37, 99) ;
-   color: rgb(1, 4, 48);
+
+.caixa h3{
+    font-size: 1.5rem;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    z-index: 9999;
+    color: rgb(222, 37, 99);
 }
-hr{
-    border: 3px solid rgb(222, 37, 99);
-    
+
+.caixa p{
+    width: 90%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    z-index: 9999;
+    color: #131653;
 }
+
+.caixa:hover::before{
+   /* background: rgba(146, 28, 68, 0.26) ;
+   color: rgb(1, 4, 48); */
+   left: 0;
+   transition: .3s;
+}
+
 .rodape{
+    display: flex;
     text-align: center;
     justify-content: center;
     font-weight: bold;
     background: rgb(1, 4, 48);
-    height: 300px;
+    padding: 20px;
+    /* height: 300px; */
     align-items:center;
     color: #eee0ae;
+    border-top: 4px solid rgb(222, 37, 99);
 }
+
 .rodape h1{
     font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.animar{
+    width: 0%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: 
+        escrever 5s steps(70) .5s both;
+}
+
+@keyframes escrever{
+    
+    from{width: 0%;}
+    to{width: 100%}
 }
